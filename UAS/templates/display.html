@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Prediksi Kanker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .result-item {
+            margin-bottom: 10px;
+        }
+
+        .result-item span {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .result-item .predict {
+            color: green;
+        }
+
+        .result-item .predictstr {
+            color: #ff3300;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hasil Prediksi Kanker</h1>
+    <hr>
+
+    <div class="result-item">
+        <span>Radius_mean:</span> {{radius_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Texture_mean:</span> {{texture_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Perimeter_mean:</span> {{perimeter_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Area_mean:</span> {{area_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Smoothness_mean:</span> {{smoothness_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Compactness_mean:</span> {{compactness_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Concavity_mean:</span> {{concavity_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Symmetry_mean:</span> {{symmetry_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Fractal_dimension_mean:</span> {{fractal_dimension_mean}}
+    </div>
+
+    <div class="result-item">
+        <span>Radius_se:</span> {{radius_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Texture_se:</span> {{texture_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Perimeter_se:</span> {{perimeter_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Area_se:</span> {{area_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Smoothness_se:</span> {{smoothness_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Compactness_se:</span> {{compactness_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Concavity_se:</span> {{concavity_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Symmetry_se:</span> {{symmetry_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Fractal_dimension_se:</span> {{fractal_dimension_se}}
+    </div>
+
+    <div class="result-item">
+        <span>Radius_worst:</span> {{radius_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Texture_worst:</span> {{texture_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Perimeter_worst:</span> {{perimeter_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Area_worst:</span> {{area_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Smoothness_worst:</span> {{smoothness_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Compactness_worst:</span> {{compactness_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Concavity_worst:</span> {{concavity_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Symmetry_worst:</span> {{symmetry_worst}}
+    </div>
+
+    <div class="result-item">
+        <span>Fractal_dimension_worst:</span> {{fractal_dimension_worst}}
+    </div>
+
+    <div class="result-item">
+        <span class="predict">Predict:</span> {{predict}}
+    </div>
+
+    <div class="result-item">
+        <span class="predictstr">Predict String:</span> {{predictstr}}
+    </div>
+
+</body>
+</html>
